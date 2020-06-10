@@ -38,6 +38,8 @@ h2 {
   justify-content: space-between;
   align-items: center;
   height: 70px;
+  position: sticky;
+  top: 0;
 }
 
 .menu {
@@ -278,12 +280,40 @@ figure {
   .contact, .footer {
     padding: 0 1em;
   }
+
+  .header {
+    z-index: 3;
+  }
 }
 
 @media only screen and (max-width: 767px) {
   .header {
     display: block;
     height: auto;
+  }
+
+  .hero {
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    padding: 1em;
+    box-sizing: content-box;
+  }
+  h1 {
+    font-size: 2em;
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.5)
+  }
+
+  .hero-image {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    top: -60px;
+    bottom: 0;
+    width: 100%;
+
   }
 
   #work {
@@ -365,6 +395,10 @@ figure {
     font-size: 10px;
   }
 
+  h1 {
+    font-size: 1.5em;
+  }
+
   #work {
     border: 1px solid white;
     height: 40px;
@@ -403,6 +437,16 @@ figure {
   header {
     width: 450px;
     padding: 20px;
+  }
+
+  h1 {
+    font-size: 2em;
+    ;
+  }
+
+  .hero {
+    width: 450px;
+    padding: 1.5em;
   }
 
   #work {
