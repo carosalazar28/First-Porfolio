@@ -1,9 +1,18 @@
+const ipad = window.matchMedia("screen and (max-width: 767px)")
 const menu = document.querySelector(".menu");
 const burguerButton = document.querySelector("#burger-menu");
 
-console.log("burguerButton")
+ipad.addListener(validation)
 
-burguerButton.addEventListener("click", hideShow)
+function validation(event) {
+  if (event.matches) {
+    burguerButton.addEventListener("click", hideShow)
+  } else {
+    burguerButton.removeEventListener("click", hideShow)
+  }
+
+  console.log(event.matches);
+}
 
 function hideShow() {
   if (menu.classList.contains("is-active")) {
