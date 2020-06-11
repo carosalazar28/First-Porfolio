@@ -5,18 +5,11 @@
     <title>Primer Portafolío</title>
     <link rel="icon"type="image/png" href="images/favicon.png">
     <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Source+Sans+Pro&display=swap" rel="stylesheet">
-    <!--<link rel="stylesheet" href="./css/media.css" media="screen and (max-width:768px)">-->
     <link rel="stylesheet" href="./css/style.css">
-    <!-- <style>
-    @media screen and (max-width: 768px) {
-      body {
-        border: 10px solid blue;
-      }
-    }
-    </style> -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
+    <i class="icon-menu burguer-button" id="burger-menu"> </i>
     <header class="header">
       <div class="container">
         <figure class="logo">
@@ -85,6 +78,9 @@
             </figure>
           </article>
         </div>
+        <div class="flex-video">
+          <iframe class="youtube-video" width="560" height="315" src="https://www.youtube.com/embed/5f5Ig_U2Bpk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
       </section>
       <section id="experiencia">
         <div class="container">
@@ -94,7 +90,7 @@
           <div class="event-list">
             <article class="event">
               <figure class="event-imageContainer">
-                <img class="event-image" src="./images/platzi-conf.jpg" width="500px" alt="Evento en Platzi">
+                <iframe class="youtube-platziConf" width="956" height="538" src="https://www.youtube.com/embed/BIS7cWGgJg0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               </figure>
               <div class="event-detail">
                 <h3 class="event-title">PlatziConf México 2018</h3>
@@ -143,10 +139,10 @@
             <button type="button" name="button">Enviar</button>
           </form>
           <div class="social">
-            <a href="https://twitter.com/leonidasesteban" class="social-link twitter"></a>
-            <a href="https://facebook.com/leonidas.esteban" class="social-link facebook"></a>
-            <a href="https://github.com/leonidasesteban" class="social-link github"></a>
-            <a href="https://instagram.com/leonidasesteban"class="social-link instagram"></a>
+            <a href="https://twitter.com/leonidasesteban" class="social-link twitter"><i class="icon-twitter"></i> </a>
+            <a href="https://facebook.com/leonidas.esteban" class="social-link facebook"><i class="icon-facebook1"></i></a>
+            <a href="https://github.com/leonidasesteban" class="social-link github"><i class="icon-github"></i> </a>
+            <a href="https://instagram.com/leonidasesteban"class="social-link instagram"><i class="icon-instagram"></i> </a>
           </div>
         </section>
       </div>
@@ -160,5 +156,6 @@
           </div>
         </footer>
       </div>
+    <script type="text/javascript" src="./js/menu.js"></script>
   </body>
 </html>
